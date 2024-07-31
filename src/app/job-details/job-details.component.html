@@ -1,0 +1,7 @@
+<div class="container" *ngIf="job">
+    <h1>{{ job.title }}</h1>
+    <p class="job-details-employer"><strong>Employer:</strong> {{ job.employer }}</p>
+    <p class="job-details-duration"><strong>Duration:</strong> {{ job.duration }}</p>
+    <p class="job-details-description">{{ job.description }}</p>
+    <a [routerLink]="['/jobs']">Back To Jobs</a>
+  </div>

@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Work History</h1>
+  <p class="jobs-list">
+    <li *ngFor="let job of jobs" class="job-item">
+      <a [routerLink]="['/jobs', job.id]" class="job-link">{{ job.title }}</a>
+    </li>
+  </p>
+</div>
